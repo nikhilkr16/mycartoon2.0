@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="media.css">
+
+  
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Josefin+Sans:ital,wght@1,200&family=Josefin+Slab:ital,wght@1,500&family=Merriweather:ital,wght@1,400;1,700&family=Mulish:ital@1&family=Noto+Serif:ital,wght@1,700&family=Oswald:wght@500&family=Roboto+Slab&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+:root{
+	--widths:100vw;
+	--heights:100vh;  
+}
+
+.struc{
+	width: var(--widths);
+	height: var(--heights);
+	background:#34eb93; 
+	display: grid;
+	grid-template-rows: calc(var(--heights) - 90vh) calc( var(--heights) - 10vh)  ;
+	grid-template-columns: calc(var(--widths) - 70vw) calc( var(--widths) - 30vw);
+		overflow-x: hidden;
+	overflow-y: hidden;
+
+}
+.top{
+	background-color: red;
+ grid-column: 1/-1;
+ font-family: 'Josefin Slab', serif;
+
+
+
+ display: grid;
+ place-items: center;
+}
+/* 
+.side{
+	background-color: cyan;
+
+}
+.content{
+
+	background-color: blue;
+
+} */
+h1{
+	color: white;
+	font-size: 40px;
+	font-weight: 500;
+
+}
+
+
+
+.side2{
+	width:calc(var(--widths) - 70vw) ;
+	height:calc( var(--heights) - 10vh) ;
+}
+.content2{
+	width: calc( var(--widths) - 30vw);
+	height:calc( var(--heights) - 10vh) ;
+}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<div class="struc">
+<div class="top"><h1 class="header "><b>MY CHILDHOOD CARTOONS</b></h1></div>
+	<div class="side">
+		<iframe class="side2"  src="side.html"></iframe>
+	</div>
+	<div class="content">
+		
+		<iframe class="content2" name="display" src="content.html"></iframe>
+	</div>
+
+</div>
+</body>
+</html>
